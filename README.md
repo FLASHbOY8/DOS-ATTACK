@@ -21,19 +21,19 @@ o use the DDos-tool type the following commands in Termux:
 
 `pkg install python2 -y`
 
-`git clone https://github.com/Ngulefac/DOS-attack.git`
+`git clone https://github.com/FLASHbOY8/DOS-ATTACK.git`
 
-`cd DOS-attack`
+`cd DOS-ATTACK`
 
 `ls`
 
-`chmod +x Blacksquad-DOS.py`
+`chmod +x FLASHBOY8.py`
 
-`python2 Blacksquad-DOS.py`
+`python2 FLASHBOY8.py`
 
 ## USAGE
 
-`python2 Blacksquad-DOS.py`
+`python2 FLASHBOY8.py`
   
 
 ## For Debian-based GNU/Linux distributions
@@ -43,13 +43,13 @@ To use the application, type in the following commands in GNU/Linux terminal.
 
 `sudo apt install git` or  `sudo apt-get install git`
 
-`git clone https://github.com/Ngulefac/DOS-attack.git`
+`git clone https://github.com/FLASHbOY8/DOS-ATTACK.git`
 
-`cd DOS-attack`
+`cd DOS-ATTACK`
 
 `ls`
 
-`python2 Blacksquad-DOS.py`
+`python2 FLASHBOY8.py`
 
 ## For MacOS
 
